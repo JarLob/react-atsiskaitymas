@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px;
+    .logo{
+        margin-right: auto;
+        color:darkslategray;
+    }
+}
