@@ -1,8 +1,10 @@
+import "./footer.scss"
+
 const Footer = () => {
 
     return (
       <footer className = "footer">
-        Footer
+        <p> &copy; never ever again</p>
       </footer>
     );
   }

@@ -1,5 +1,5 @@
 import Header from "../sections/header/Header";
-import Footer from "../sections/Footer"
+import Footer from "../sections/footer/Footer"
 
 const HomePage = () => {
 
