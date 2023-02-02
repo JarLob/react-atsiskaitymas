@@ -1,15 +1,15 @@
-.card {
+.post {
   width: 100%;
   max-width: 600px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   box-sizing: border-box;
 }
-.card .cardHeading {
+.post .postHeading {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-.card .cardContent {
+.post .postContent {
   font-size: 14px;
-}/*# sourceMappingURL=card.css.map */
+}/*# sourceMappingURL=post.css.map */

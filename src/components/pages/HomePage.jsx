@@ -1,43 +1,25 @@
-import { useState, useEffect } from 'react';
+import { useContext } from "react";
 
+import PostContext from "../../contexts/PostContext";
 import Header from "../sections/header/Header";
 import Footer from "../sections/footer/Footer"
-import Card from "../other/card/card";
+import Post from "../post/Post";
 
 import "./page-styles/page.scss"
 
 const HomePage = () => {
 
-  const [users, setUsers] = useState(null);
-  const [posts, setPosts] = useState(null); 
-
-  const fetchUsers = async () => {
-    const users = await fetch('http://localhost:5000/users')
-      .then(res => res.json());
-    setUsers(users);
-  }
-
-  const fetchPosts = async () => {
-    const allPosts = await fetch('http://localhost:5000/posts')
-      .then(res => res.json());
-    setPosts(allPosts);
-  }
-
-  useEffect(()=>{
-    fetchUsers();
-    fetchPosts();
-  }, []);
-
+  const { posts } = useContext(PostContext);
 
   return (
-    (posts && users) ?
+    posts ?
       <>
         <Header />
         <main>        
           <div className = "page homePage">
             <div className="cardsContainer">     
               {posts.map(post => 
-                <Card key={post.id} heading={post.heading} content={post.content}/>  
+                <Post key={post.id} heading={post.heading} content={post.content}/>  
               )}
             </div> 
           </div> 
