@@ -4,8 +4,24 @@ header{
     gap: 20px;
     padding: 10px;
     background-color: rgb(238, 238, 238);
+    align-items: center;
     .logo{
         margin-right: auto;
         color:darkslategray;
     }
+}
+
+.link{
+    text-decoration: none;
+    color: darkslategray;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+
+.loginButton, .registerButton{
+    background-color: transparent;
+    color: darkslategray;
+    width: fit-content;
+    border: 1px solid darkslategray;
+    border-radius: 5px;
 }
