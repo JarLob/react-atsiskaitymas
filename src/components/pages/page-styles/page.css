@@ -1,0 +1,9 @@
+.page {
+  padding: 30px 10px;
+}
+
+.homePage .cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}/*# sourceMappingURL=page.css.map */

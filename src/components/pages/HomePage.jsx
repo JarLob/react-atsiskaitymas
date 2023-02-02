@@ -31,14 +31,20 @@ const HomePage = () => {
 
   return (
     (posts && users) ?
-    <>
-      <Header />
-      <main>        
-        {console.log (posts, users)};
-      </main>
-      <Footer />
-    </> :
-      <p>...Loding</p>
+      <>
+        <Header />
+        <main>        
+          <div className = "page homePage">
+            <div className="cardsContainer">     
+              {posts.map(post => 
+                <Card key={post.id} heading={post.heading} content={post.content}/>  
+              )}
+            </div> 
+          </div> 
+        </main>
+        <Footer />
+      </> :
+        <p>...Loding</p>
   );
 }
  
