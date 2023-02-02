@@ -1,17 +1,44 @@
+import { useState, useEffect } from 'react';
+
 import Header from "../sections/header/Header";
 import Footer from "../sections/footer/Footer"
 import Card from "../other/card/card";
 
+import "./page-styles/page.scss"
+
 const HomePage = () => {
 
+  const [users, setUsers] = useState(null);
+  const [posts, setPosts] = useState(null); 
+
+  const fetchUsers = async () => {
+    const users = await fetch('http://localhost:5000/users')
+      .then(res => res.json());
+    setUsers(users);
+  }
+
+  const fetchPosts = async () => {
+    const allPosts = await fetch('http://localhost:5000/posts')
+      .then(res => res.json());
+    setPosts(allPosts);
+  }
+
+  useEffect(()=>{
+    fetchUsers();
+    fetchPosts();
+  }, []);
+
+
   return (
+    (posts && users) ?
     <>
       <Header />
-      <main>
-        <Card />
+      <main>        
+        {console.log (posts, users)};
       </main>
       <Footer />
-    </>
+    </> :
+      <p>...Loding</p>
   );
 }
  
