@@ -13,3 +13,45 @@
         font-size: 14px;
     }
 }
+
+.formContainer{
+    padding: 50px 20px;
+    max-height: 80vh;
+    text-align: center;
+    
+    input{
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 20px auto;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 18px;
+      display: block;
+      box-sizing: border-box;
+      border: 1px solid darkslategray;
+    }
+    textarea{
+      width: 100%;
+      max-width: 400px;
+      height: 80px;
+      margin: 0 auto 20px auto;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 18px;
+      display: block;
+      box-sizing: border-box;
+      border: 1px solid darkslategray
+    }
+    input[type=submit]{
+        width: 100%;
+        max-width: 400px;
+        margin-top: 40px;
+        font-weight: 700;
+        background-color: darkslategray;
+        color: white;
+        padding: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+  }
