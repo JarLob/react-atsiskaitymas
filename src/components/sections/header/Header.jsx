@@ -15,13 +15,17 @@ const Header = () => {
         {
           loggedInUser ?
             <nav>
-              <Link className="link" to="/">Home</Link> 
-              <Link className="link" to="/new-post">Create a post</Link>
+              <Link className="navigationLink" to="/">Home</Link> 
+              <Link className="navigationLink" to="/new-post">Create a post</Link>
             </nav> 
             : 
             <>
-              <button className="loginButton">Log In</button>
-              <button className = "registerButton">Register</button>
+              <div className="loginButton">
+                <Link className="link" to="/login">Log in</Link>
+              </div>
+              <div className = "registerButton">
+                <Link className="link" to="/registration">Registration</Link>
+              </div>
             </>
           
         }

@@ -19,6 +19,11 @@
       "id": 4,
       "email": "mantas@mantas.lt",
       "password": "mantas123"
+    },
+    {
+      "email": "tu@tu.lt",
+      "password": "tu123",
+      "id": 1675412722755
     }
   ],
   "posts": [
@@ -65,19 +70,10 @@
       "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-      "heading": "Cow",
-      "content": "miau miau",
-      "id": 1675370948922
-    },
-    {
-      "heading": "dog",
-      "content": "au au",
-      "id": 1675371534292
-    },
-    {
-      "heading": "Bum",
-      "content": "joijpjjjjjjjjjjjjp",
-      "id": 1675371989808
+      "heading": "Tu post",
+      "content": "The new post of Tu",
+      "id": 1675412753779,
+      "userId": 1675412722755
     }
   ]
 }
