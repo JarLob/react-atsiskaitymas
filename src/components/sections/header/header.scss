@@ -3,8 +3,11 @@ header{
     justify-content: flex-end;
     gap: 20px;
     padding: 10px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(229, 235, 235);
     align-items: center;
+    @media (min-width: 600px) {
+        padding: 10px 50px;
+    }
     .logo{
         margin-right: auto;
         color:darkslategray;

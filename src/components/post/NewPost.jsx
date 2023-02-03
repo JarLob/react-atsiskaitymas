@@ -36,7 +36,7 @@ const NewPost = () => {
       heading: '',
       content: ''
     });
-    navigation('/');
+    navigation('/home');
   }
 
     return (

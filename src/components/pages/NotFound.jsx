@@ -1,10 +1,11 @@
 const NotFound = () => {
 
     return (
-      <div className = "page notFound">
-        not found
-      </div>
+      <span className="mainNotification">Page not found</span>
     );
   }
    
   export default NotFound;
+
+
+  
