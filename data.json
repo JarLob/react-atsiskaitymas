@@ -19,61 +19,50 @@
       "id": 4,
       "email": "mantas@mantas.lt",
       "password": "mantas123"
-    },
-    {
-      "email": "tu@tu.lt",
-      "password": "tu123",
-      "id": 1675412722755
     }
   ],
   "posts": [
     {
       "id": 1,
       "userId": 2,
-      "heading": "Mountain skiis",
+      "heading": "Deal of the day",
       "content": " Lorem ipsum dolor sit ex aspernatur explicabo quo doloribus."
     },
     {
       "id": 2,
       "userId": 2,
-      "heading": "Petzl Harness",
+      "heading": "Who is in for a movie?",
       "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur rem architecto!"
     },
     {
       "id": 3,
       "userId": 4,
-      "heading": "Hiking shoes",
+      "heading": "Tonight",
       "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
       "id": 5,
       "userId": 1,
-      "heading": "Funny skateboard",
+      "heading": "Check out this",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, debitis."
     },
     {
       "id": 6,
       "userId": 2,
-      "heading": "Mountain skiis",
+      "heading": "What a scam!",
       "content": " Lorem ipsum dolor sit ex aspernatur explicabo quo doloribus."
-    },
-    {
-      "id": 7,
-      "userId": 2,
-      "heading": "Petzl Harness",
-      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur rem architecto!"
     },
     {
       "id": 8,
       "userId": 4,
-      "heading": "Hiking shoes",
+      "heading": "No sun?",
       "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-      "heading": "Tu post",
-      "content": "The new post of Tu",
-      "id": 1675412753779,
-      "userId": 1675412722755
+      "heading": "What's your plan?",
+      "content": "What are you plans for this upcomming weekend? ",
+      "id": 1675419059270,
+      "userId": 2
     }
   ]
 }

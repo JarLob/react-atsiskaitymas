@@ -1,4 +1,5 @@
-import { useContext } from "react";
+import { useState, useEffect, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 import PostContext from "../../contexts/PostContext";
 import UserContext from "../../contexts/UserContext";
@@ -11,28 +12,35 @@ import "./page-styles/page.scss"
 
 const HomePage = () => {
 
+  const [showHome, setShowHome] = useState(false);
+
   const { posts } = useContext(PostContext);
   const { loggedInUser } = useContext(UserContext);
-  console.log(loggedInUser);
+
+  const navigation = useNavigate();
+
+  //in case some enters /home without logging in
+  useEffect(() => {
+    loggedInUser ? setShowHome(true) : navigation('/Login');
+  }, [loggedInUser, navigation]); 
+  if (!showHome) {return null;}
 
   return (
     posts ?
       <>
-        <Header />
-        { loggedInUser &&   
-          <main>        
-            <div className = "page homePage">
-              <div className="cardsContainer">
-                {posts.length === 0 ?
-                  <span className="mainNotification">There are no posts to display</span> :                     
-                  posts.map(post => 
-                    <Post key={post.id} heading={post.heading} content={post.content}/>  
-                  )
-                }               
-              </div> 
+        <Header /> 
+        <main>        
+          <div className = "page homePage">
+            <div className="cardsContainer">
+              {posts.length === 0 ?
+                <span className="mainNotification">There are no posts to display</span> :                     
+                posts.map(post => 
+                  <Post key={post.id} heading={post.heading} content={post.content}/>  
+                )
+              }               
             </div> 
-          </main>
-        }
+          </div> 
+        </main>
         <Footer />
       </> :
         <span className="mainNotification">...Loding</span>

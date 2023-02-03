@@ -27,7 +27,7 @@ const Login = () => {
     const existingUser= users.find(user => user.username === formInputs.username && user.password === formInputs.password);
     if (existingUser){
         setLoggedInUser(existingUser);
-        navigation('/');
+        navigation('/home');
       } else {
       setCorrectLogin(false)
     };    

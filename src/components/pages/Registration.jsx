@@ -40,7 +40,7 @@ const Registration = () => {
       console.log(newUser);
       addNewUser(newUser);
       setLoggedInUser(newUser);
-      navigation('/');
+      navigation('/home');
     }
   }
 
