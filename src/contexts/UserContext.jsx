@@ -4,7 +4,7 @@ const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
 
-  const [loggedInUser, setLoggedInUser] = useState(true);
+  const [loggedInUser, setLoggedInUser] = useState(false);
   const [users, setUsers] = useState();
 
   const fetchUsers = async () => {
